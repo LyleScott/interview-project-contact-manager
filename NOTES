@@ -1,0 +1,50 @@
+Contact Manager
+---------------
+
+This document represents an overview of the basic requirements and outlines some
+highlevel details to start conceptualizing a dev and testing plan.
+
+Spec URL:
+    - https://bitbucket.org/qdidev/qdi_code_challenge
+
+Fields:
+    - First Name
+    - Last Name
+    - Zip Code
+    - City
+
+    - State
+
+Features:
+    - City and State populated dynamically based off Zip Code
+        - api* = http://ziptasticapi.com
+    - list contacts
+    - allow user to add contacts
+        - need to support users if possible
+    - edit existing contacts
+
+Model:
+    - contact manager
+        - created (datetime)
+        - modified (datetime)
+        - contacts (relation, 1:M)
+        - user*
+
+    - contact
+        - contact managers (relation, 1:M)
+        - created (datetime)
+        - modified (datetime)
+        - address (relation, 1:M)
+        - person (relation, 1:M)
+
+    - person
+        - contacts (relation, 1:M)
+        - firstname (string, 256)
+        - lastname (string, 256)
+
+    - address
+        - contacts (relation, 1:M)
+        - zipcode (string, 16)
+        - city (string, 256)
+        - usstate (string, 2)
+

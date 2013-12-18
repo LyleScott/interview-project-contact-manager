@@ -1,0 +1,26 @@
+For this coding challenge, we would like for you to build a simple contact manager web application. 
+The app should have a list of contacts, allow the user to add new contacts and edit existing ones. 
+These are the fields you will need to collect:
+
+First Name
+Last Name
+Zip Code
+City
+State
+
+To add to the challenge, you need the City & State fields to be populated from a dynamic client 
+side web service call based on the Zip Code the user enters. 
+This web service is located @ http://ziptasticapi.com/ .
+
+While we prefer you use our primary language, Python, you can choose a language you are more comfortable with.
+
+Since the app needs to display previously entered information, you will need to persist data to a database. 
+We typically use what is available on Google’s cloud platform (MySQL & Datastore), but you could also 
+use SQLite, PostgreSQL,...
+
+We encourage you to commit to your repo early and often. This will help show the phases/flow of your 
+development.  To get started fork the repository and when you are all done submit a pull request 
+so we can review it.
+
+
+
